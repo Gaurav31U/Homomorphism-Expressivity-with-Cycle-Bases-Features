@@ -28,31 +28,3 @@ The file names begin with a prefix indicating the model type: `MP` for message-p
 
 The file name follows the format: `f"result.zinc/{model}-{subset}-{max_dis}-{num_layer}x{dim_embed}-{bs}-{lr}-{seed}.txt"`, where each component represents the model string, subset or full dataset, maximum distance encoding, batch size, learning rate, and random seed.
 
-### Alchemy
-
-The file name follows the format: `f"result.alchemy/{model}-{max_dis}-{num_layer}x{dim_embed}-{bs}-{lr}-{seed}.txt"`, where each component represents the model string, maximum distance encoding, batch size, learning rate, and random seed.
-
-### Count
-
-The file name follows the format: `f"result.count/{model}-{task}-{max_dis}-{num_layer}x{dim_embed}-{bs}-{lr}-{seed}.txt"`, where each component represents the model string, task name, maximum distance encoding, batch size, learning rate, and random seed. The task name is a tuple of structure name (see [`dataset.py`](src/dataset.py) for detailed definitions) and counting level (`g` for graph level, `v` for node level, and `e` for edge level).
-
-## Timeline
-
-- 2024.01.14: release code.
-- 2024.01.19: update citation.
-
-## Acknowledgement
-
-Our code is based on [SWL](https://github.com/subgraph23/SWL).
-
-## Citation
-
-If you find this repository useful, please cite our work:
-```
-@article{zhang2024beyond,
-  title={Beyond Weisfeiler-Lehman: A Quantitative Framework for GNN Expressiveness},
-  author={Zhang, Bohang and Gai, Jingchu and Du, Yiheng and Ye, Qiwei and He, Di and Wang, Liwei},
-  journal={arXiv preprint arXiv:2401.08514},
-  year={2024}
-}
-```
